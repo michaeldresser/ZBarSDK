@@ -678,6 +678,7 @@ int zbar_scan_image (zbar_image_scanner_t *iscn,
     img->syms = syms;
 
     w = img->width;
+#pragma unused(h)
     h = img->height;
     cx1 = img->crop_x + img->crop_w;
     assert(cx1 <= w);

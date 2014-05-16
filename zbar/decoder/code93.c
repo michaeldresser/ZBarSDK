@@ -158,6 +158,7 @@ decode_start (zbar_decoder_t *dcode)
     if(dir) {
         if(decode_e(pair_width(dcode, 0), s, 9))
             return(ZBAR_NONE);
+#pragma unused(qz)
         qz = get_width(dcode, 8);
     }
 

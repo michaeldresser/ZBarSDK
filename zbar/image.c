@@ -247,6 +247,7 @@ int zbar_image_write (const zbar_image_t *img,
     FILE *f;
     zimg_hdr_t hdr;
     strcpy(filename, filebase);
+#pragma unused(n)
     if((img->format & 0xff) >= ' ')
         n = snprintf(filename, len, "%s.%.4s.zimg",
                      filebase, (char*)&img->format);

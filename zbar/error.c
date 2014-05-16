@@ -175,6 +175,7 @@ const char *_zbar_error_string (const void *container,
 #endif
     else {
         err->buf = realloc(err->buf, len + 2);
+#pragma unused(len)
         len += sprintf(err->buf + len, "\n");
     }
     return(err->buf);
