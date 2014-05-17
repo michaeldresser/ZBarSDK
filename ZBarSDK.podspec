@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name     = 'ZBarSDK-fixWarning'
+  s.name     = 'ZBarSDK'
   s.version  = '1.3.1'
   s.platform = :ios
   s.license  = 'GNU LGPL 2.1'
