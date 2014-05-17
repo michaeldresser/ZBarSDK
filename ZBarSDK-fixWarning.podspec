@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary  = 'QR and barcode scan library.'
   s.homepage = 'http://zbar.sourceforge.net/'
   s.author   = { 'Jeff Brown' => 'spadix@users.sourceforge.net' }
-  s.source   = { :git => 'https://github.com/lerosua/ZBarSDK-fixWarning.git', :tag =>"fixWarning-1.3.1" }
+  s.source   = { :git => 'https://github.com/lerosua/ZBarSDK.git', :tag =>"fixWarning-1.3.1" }
 
   s.description  = 'ZBar is an open source software suite for reading bar codes from various sources, such as video streams, ' \
                    'image files and raw intensity sensors. It supports many popular symbologies (types of bar codes) including ' \
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'QuartzCore'
 
   s.library      = 'iconv'
+  s.requires_arc = false
 
   s.xcconfig = { "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*][arch=*]"        => 'ZBarReaderViewImpl_Simulator.m',
                  "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*][arch=*]" => 'ZBarReaderViewImpl_Capture.m ZBarCaptureReader.m',
